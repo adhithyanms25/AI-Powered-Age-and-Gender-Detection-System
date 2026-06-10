@@ -6,3 +6,5 @@ matplotlib
 pandas
 scikit-learn
 pillow
+streamlit
+keras
