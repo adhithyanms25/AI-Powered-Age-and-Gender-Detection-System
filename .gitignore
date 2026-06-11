@@ -1,0 +1,15 @@
+venv/
+myenv/
+__pycache__/
+*.pyc
+
+archive.zip
+
+age detection/
+gender/
+
+.vscode/
+.idea/
+
+Thumbs.db
+.DS_Store
