@@ -38,19 +38,27 @@ gender_labels = ['Male', 'Female']
 # ---------------------------
 # SIDEBAR
 # ---------------------------
-st.sidebar.title("🎯 Model Information")
+st.sidebar.title("⚙️ Control Center")
 
-st.sidebar.success("YOLOv8n Person Detection")
-st.sidebar.success("CNN Age Prediction")
-st.sidebar.success("CNN Gender Prediction")
+st.sidebar.success("YOLOv8 Loaded")
+
+st.sidebar.success("Age CNN Loaded")
+
+st.sidebar.success("Gender CNN Loaded")
+
+confidence = st.sidebar.slider(
+"Detection Confidence",
+0.1,
+1.0,
+0.5
+)
 
 st.sidebar.markdown("---")
 
-st.sidebar.write(
-    "Detect people in real time and predict "
-    "their age group and gender."
+st.sidebar.info(
+"NeuralVision AI is actively monitoring "
+"the webcam feed."
 )
-
 # ---------------------------
 # TITLE
 # ---------------------------
