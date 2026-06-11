@@ -13,6 +13,44 @@ st.set_page_config(
     page_icon="🎯",
     layout="wide"
 )
+st.markdown("""
+<style>
+
+.stApp{
+background: linear-gradient(
+135deg,
+#020617,
+#0f172a,
+#111827
+);
+}
+            
+[data-testid="stHeader"]{
+    background: transparent;
+}
+
+header{
+    background: transparent;
+}
+
+[data-testid="stMetric"]{
+background-color:#111827;
+border:1px solid #00ffff;
+padding:15px;
+border-radius:15px;
+box-shadow:0 0 15px rgba(0,255,255,0.4);
+}
+
+[data-testid="stSidebar"]{
+background-color:#0f172a;
+}
+
+h1,h2,h3,h4,p,label{
+color:white !important;
+}
+
+</style>
+""", unsafe_allow_html=True)
 
 # ---------------------------
 # LOAD MODELS
@@ -62,12 +100,19 @@ st.sidebar.info(
 # ---------------------------
 # TITLE
 # ---------------------------
-st.title("🎯 AI-Powered Age and Gender Detection System")
+st.markdown("""
+<div style='text-align:center;'>
+<h1 style='color:#00FFFF;
+text-shadow:0px 0px 20px #00FFFF;
+font-size:60px;'>
+🤖 NeuralVision AI
+</h1>
 
-st.markdown(
-    "Real-time age and gender prediction using "
-    "YOLOv8, TensorFlow, Keras and OpenCV."
-)
+<h4 style='color:white;'>
+Real-Time Age & Gender Analytics using YOLOv8
+</h4>
+</div>
+""", unsafe_allow_html=True)
 
 # ---------------------------
 # START BUTTON
